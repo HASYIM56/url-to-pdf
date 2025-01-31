@@ -1,0 +1,33 @@
+/* Author text styling */
+.author-text {
+    text-align: center;
+    margin-top: 15px;
+    color: #FFFFFF;
+    font-family: 'kustom', sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.9; /* Slightly transparent for smooth effect */
+}
+
+.author-text p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.author-text .highlight {
+    color: #3d81f7; /* Sky blue color of the visual theme */
+    font-size: 1.2em;
+    margin-top: 5px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for author text */
+.author-text .highlight:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}

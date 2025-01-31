@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'kustom';
+    src: url('Espressonal.otf') format('truetype');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: 'kustom', sans-serif;
+    overflow: hidden;
+}
+
+.container, .author-text {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 400px;
+    font-family: 'kustom', sans-serif;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 2em;
+    font-family: 'kustom', sans-serif;
+}
+
+#urlForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+input[type="url"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'kustom', sans-serif;
+}
+
+input[type="password"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'kustom', sans-serif;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin-top: 15px;
+    font-family: 'kustom', sans-serif;
+}
+
+#downloadButton {
+    display: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: none;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+#downloadButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#statusMessage {
+    margin-top: 10px;
+    color: green;
+    font-family: 'kustom', sans-serif;
+}
+
+/* Author Text Styling */
+.author-text {
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1em;
+    color: #FFFFFF;
+    font-family: 'kustom', sans-serif;
+}
+
+.author-text .highlight {
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    bottom: 0;
+}
+
+#bugReportButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    background-color: #3d81f7;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-family: 'kustom', sans-serif;
+}
+
+#bugReportButton i {
+    margin-right: 5px;
+}
+
+#bugReportButton:hover {
+    background-color: #3d81f7;
+    transform: scale(1.05);
+}
