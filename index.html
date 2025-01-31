@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website to PDF Converter - HASYIM56</title>
+    <link rel="icon" href="img/H56.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/pico.css">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/effect.css">
+    <link rel="stylesheet" href="static/author-text.css">
+    <link rel="stylesheet" href="static/pico.classless.conditional.grey.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main class="container fade-in">
+        <h1 class="fade-in">Website to PDF Converter</h1>
+        <form id="urlForm" class="fade-in">
+            <input type="url" id="urlInput" name="url" placeholder="Enter Website URL" required>
+            <input type="password" id="passwordInput" name="password" placeholder="Optional Password (for encryption)">
+            <button type="submit" class="fade-in">Generate PDF</button>
+        </form>
+        <div id="loadingContainer" style="display: none; width: 100%; margin-top: 15px;">
+            <div id="loadingBar" style="width: 0; height: 20px; background-color: #4CAF50; border-radius: 8px;"></div>
+            <p id="loadingText" style="color: white; margin-top: 5px; font-family: 'kustom'; text-align: center;">0%</p>
+        </div>
+        <div style="margin-top: 30px;">
+            <a id="downloadButton" class="fade-in" style="display: none;" download>
+                <i class="fas fa-download"></i> Download PDF
+            </a>
+        </div>
+        <div id="statusMessage" class="fade-in"></div>
+    </main>
+    <div class="author-text fade-in">
+        <p>CREATOR :</p>
+        <span class="highlight">HASYIM56</span>
+    </div>
+    <footer>
+        <button id="bugReportButton" onclick="window.location.href='bug-report/bugreport.html'">
+            <i class="fas fa-bug"></i> Lapor Bug
+        </button>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="static/script.js"></script>
+    <script src="static/youtube.js"></script>
+</body>
+</html>
