@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    font-family: 'kustom', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Fullscreen Background */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+/* Container Style */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.6); /* Glassmorphism Effect */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+/* Input and Textarea Styles */
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2); /* Transparan */
+    color: #fff;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Garis input */
+    transition: border-color 0.3s ease-in-out;
+}
+
+input::placeholder, 
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus, 
+textarea:focus {
+    border-bottom: 2px solid #fff; /* Warna putih terang */
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Submit Button Styles */
+button.btn-submit {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+button.btn-submit:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Icon Styling */
+button.btn-submit i {
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer .note {
+    font-style: italic;
+    color: #f41313;
+}
